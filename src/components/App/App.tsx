@@ -18,6 +18,7 @@ function App() {
 
   const handleSearch = async (query: string) => {
     try {
+      setMovies([]);
       setIsError(false);
       setIsLoading(true);
       const findMovies = await fetchMovies(query);
