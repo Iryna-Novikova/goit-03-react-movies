@@ -9,7 +9,6 @@ export const fetchMovies = async (query: string): Promise<Movie[]> => {
     const myKey = import.meta.env.VITE_TMDB_TOKEN;
 
     axios.defaults.baseURL = 'https://api.themoviedb.org/3/search';
-    // axios.defaults.headers["Authorization"] = `Bearer ${myKey}`;
     
     const endPoint = '/movie';
     const params = {
